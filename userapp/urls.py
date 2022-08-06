@@ -1,9 +1,10 @@
-from django.contrib import admin
 from django.urls import path
-
+from . import views
 
 # importing views from views..py
-from .views import UserList
+
 urlpatterns = [
-    path('', UserList.as_view()),
+    path('', views.Home, name='Home'),
+    path("Signup/", views.SignUpView, name='Signup'),
+    path("Login/", views.Login, name='Login'),
 ]
