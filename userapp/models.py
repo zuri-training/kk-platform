@@ -16,7 +16,7 @@ class User(models.Model):
     Last_name = models.CharField(max_length=100)
     User_name = models.CharField(max_length=100)
     Email = models.EmailField(max_length=100)
-    User_ID = models.ForeignKey(User_ID, on_delete=models.CASCADE)
+    # User_ID = models.ForeignKey(User_ID, on_delete=models.CASCADE)
     College_name = models.CharField(max_length=400)
     Department = models.CharField(max_length=100)
     Year_of_admission = models.IntegerField(default='0')
@@ -28,6 +28,16 @@ class User(models.Model):
     def __str__(self):
         return self.User_name
 
+# LOGIN TABLE
+
+
+class Login(models.Model):
+    User_name = models.CharField(max_length=100)
+    Email = models.EmailField(max_length=100)
+    Password = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.User_name, self.Email, s
 # TAG MODEL/CATEGORY
 
 
