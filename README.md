@@ -1,4 +1,4 @@
-# Kampus Konnect - Platform Backend
+# Kampus Konnect - Platform
 
 A platform for short movies created by college students accessible to only college students.
 
