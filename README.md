@@ -4,20 +4,20 @@ A marketing website for Kampus konnect: a platform for short movies created by c
 
 # Table of Contents
 
-    ## Description
+## Description
 
-        ### Live Demo
-        ### Built With
-        ### Authors
-    
-    ## Getting Started
+### Live Demo
+### Built With
+### Authors
 
-        ### Dependencies
-        ### Installation
-    
-    ##License
-    
-    ##Version History
+## Getting Started
+
+### Dependencies
+### Installation
+
+## License
+
+## Version History
 
 
 
