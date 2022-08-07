@@ -6,14 +6,14 @@ A marketing website for Kampus konnect: a platform for short movies created by c
 
 Description
 
-    Live Demo
-    Built With
-    Authors
+Live Demo
+Built With
+Authors
 
 Getting Started
 
-    Dependencies
-    Installation
+Dependencies
+Installation
 
 License
 
