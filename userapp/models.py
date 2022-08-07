@@ -47,7 +47,7 @@ class Video (models.Model):
     Video_description = models.CharField(max_length=300)
     User_ID = models.ForeignKey(User_ID, on_delete=models.CASCADE)
     Video_Link = models.URLField(max_length=400)  # same like models.URLField()
-    Date_Time = models.DateField()
+    Date_Time = models.DateTimeField()
     VID_STATUS_CHOICES = (
         ("1", "Private"),
         ("2", "Public"),
@@ -60,6 +60,7 @@ class Video (models.Model):
         return self.Title
 
 
+
 # COMMENTS MODEL
 class Comment(models.Model):
     Comments_ID = models.CharField(primary_key=True, max_length=200)
@@ -67,6 +68,7 @@ class Comment(models.Model):
     User_ID = models.ForeignKey(User_ID, on_delete=models.CASCADE)
     Date_Time = models.DateTimeField(auto_now_add=True)
 
+    
     def __str__(self):
         return self.Comments
 
@@ -86,7 +88,7 @@ class History(models.Model):
     User_ID = models.ForeignKey(User_ID, on_delete=models.CASCADE)
 
     def __str__(self):
-        returnself.Video
+        return self.Video
 
 
 # VIDEO REACTION MODEL
