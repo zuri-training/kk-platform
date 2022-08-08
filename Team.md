@@ -1,1 +1,3 @@
 # Kampus Konnect - Team
+
+Abigail Adeboga - Designed category page https://github.com/zuri-training/kk-platform_fe/issues/5, figma 
