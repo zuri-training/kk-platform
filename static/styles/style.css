@@ -129,6 +129,13 @@ hr {
 =>  Header Section
 ================================*/
 
+.logo {
+  height: 30px;
+}
+
+.logo img {
+  height: inherit;
+}
 
 /*==============================
 =>  Sidebar Section
