@@ -9,11 +9,11 @@ from .models import *
 
 class NewUserForm(forms.ModelForm):
     class Meta:
-        model = User
+        model = User_Main
         fields = ("First_name", "Last_name", "User_name",
                   "Email", "College_name", "Department",
                   "Year_of_admission", "Year_of_graduation",
-                  "Account_verification")
+                  "Account_verification", "Password", "Password2")
         # "__all__"
         widgets = {
             'First_name': forms.TextInput(attrs={'class': 'form-control'}),
@@ -27,7 +27,9 @@ class NewUserForm(forms.ModelForm):
             'Account_verification': forms.TextInput(attrs={'class': 'form-control'}),
             'Account_suspension_status': forms.TextInput(attrs={'class': 'form-control'}),
             'User_tag': forms.TextInput(attrs={'class': 'form-control'}),
-            # 'User_ID': forms.TextInput(attrs={'class': 'form-control'}),
+            'User_ID': forms.TextInput(attrs={'class': 'form-control'}),
+            'Password': forms.PasswordInput(attrs={'class': 'form-control'}),
+            'Password2': forms.PasswordInput(attrs={'class': 'form-control'}),
 
         }
 
@@ -35,11 +37,26 @@ class NewUserForm(forms.ModelForm):
 # LOGIN FORM
 class LoginForm(forms.ModelForm):
     class Meta:
-        model = Login
+        model = Login_page
         fields = widgets = {
             'User_name': forms.TextInput(attrs={'class': 'form-control'}),
             'Email': forms.TextInput(attrs={'class': 'form-control'}),
-            'Password': forms.TextInput(attrs={'class': 'form-control'}),
-
+            'Password': forms.PasswordInput(attrs={'class': 'form-control'}),
         }
         # "__all__"
+
+
+# COMMENT FORM
+
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ("Comments", "User_ID")
+        # "__all__"
+        widgets = {
+            'Comments_ID': forms.TextInput(attrs={'class': 'form-control'}),
+            'Comments': forms.TextInput(attrs={'class': 'form-control'}),
+            'User_ID': forms.TextInput(attrs={'class': 'form-control'}),
+
+        }
