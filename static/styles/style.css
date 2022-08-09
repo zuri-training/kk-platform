@@ -136,12 +136,7 @@ hr {
 
 .sidebar {
   height: 100%;
-  width: 265px;
-  max-width: 270px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
+  width: 100%;
   background: #FBFBFB;
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
@@ -284,4 +279,35 @@ hr {
     .create-video .icon {
         text-align: center;
     }
+}
+
+
+/* Harrylever's Edit */
+.main_section {
+  border: 1px solid gold;
+  display: flex;
+}
+
+/* .side_section {
+  border: 1px solid black;
+} */
+
+.side_section_1 {
+  height: 100vh;
+  width: 100%;
+  max-width: 22vw;
+  position: fixed;
+  /* border: 4px solid black; */
+  /* z-index: 1; */
+  top: 0;
+  left: 0;
+}
+
+.side_section_2 {
+  margin-left: 22vw;
+  height: 100vh;
+  width: 100%;
+  max-width: 78vw;
+  /* overflow-y: scroll; */
+  /* border: 1px solid black; */
 }

@@ -13,11 +13,16 @@
 </head>
 <body>
     
-    {% block content %}
-
-
-    {% endblock %}
-    
-    {% include 'sidebar.html' %}
+    <section class="main_section">
+        <div class="side_section side_section_1">
+            {% include 'sidebar.html' %}
+        </div>
+        
+        <div class="side_section side_section_2">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </section>
+        
 </body>
 </html>
