@@ -134,6 +134,87 @@ hr {
 =>  Sidebar Section
 ================================*/
 
+.sidebar {
+  height: 100%;
+  width: 265px;
+  max-width: 270px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #FBFBFB;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.sidebar::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.sidebar.desktop-view {
+  display: block
+}
+
+.sidebar.mobile-view {
+  display: none
+}
+
+.sidebar__logo {
+  text-align: center;
+}
+
+.sidebar__logo-link {
+  display: inline-block;
+  height: 51.36px;
+  margin: 30px auto 
+}
+
+.sidebar__logo img {
+  height: inherit;
+}
+
+.sidebar__item {
+  display: block;
+  color: var(--color-gray-40);
+  height: 48px;
+  padding: 24px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__item p {
+  display: flex;
+  align-items: center;
+  width: inherit;
+  gap: 16px;
+}
+
+.sidebar__item:hover,
+.sidebar__item:focus,
+.sidebar__item:active {
+  color: var(--color-white);
+  background-color: var(--color-main-50);
+}
+
+.sidebar__item .icon {
+  height: 24px;
+  width: 24px;
+  align-content: center;
+}
+
+.sidebar__item .icon .svg-icon {
+  color: inherit;
+  fill: currentColor;
+}
+
+.sidebar__item-text {
+  font-size: inherit;
+}
+
+@media only screen and (max-width: 500px) {
     .sidebar.desktop-view {
         display: none;
     }
