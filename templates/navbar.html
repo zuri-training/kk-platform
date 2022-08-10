@@ -1,31 +1,30 @@
 {% load static %}
 
 <!-- Desktop & Tablet view  -->
-<div class="navbar">
+<!-- <div class="navbar"> -->
     <div class="logo navbar__mobile">
         <img src="{% static 'images/logo.webp' %}" alt="logo" />
     </div>
-    <div>
+    <div class="navbar__search">
         <form>
-            <svg>
-
-            </svg>
-            <input type="text" placeholder="Search" />
-            <button>
-                <svg>
-
-                </svg>
-            </button>
+            <div class="input__search">
+                <!-- <img src="{% static 'images/icons/icon-search.svg' %}" alt=""> -->
+                <input type="text" placeholder="Search" />
+                <button class="btn">
+                    <img src="{% static 'images/icons/icon-search.svg' %}" alt="">
+                </button>
+            </div>
         </form>
     </div>
 
-    <div>
-        <div>
-            <svg></svg>
+    <div class="user__profile">
+        <div class="user__notifications">
+            <img class="icon-notify" src="{% static 'images/icons/icon-notify.svg' %}" alt="">
             <div class="notifications"></div>
         </div>
-        <div>
-            <p>Jenny Wilson</p>
+        <div class="user__avatar">
+            <!-- <img src="" alt="User's profile picture" /> -->
         </div>
+        <p class="user__name">Jenny Wilson</p>
     </div>
-</div>
+<!-- </div> -->
