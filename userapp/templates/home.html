@@ -22,6 +22,11 @@
 	<div class="home_page_section_2_introudction_line">
 		<h2>Recently Added</h2>
 		<p><a href="#">See all</a></p>
+		{% if messages %} {% for message in messages %}
+		<div class="alert alert-{{ message.tags}} m-0" role="alert">
+			<strong>{{ message }}</strong>
+		</div>
+		{% endfor %} {% endif %}
 	</div>
 	<div class="video_tabs_grid_container">
 		<div class="video_tabs_item">

@@ -37,9 +37,9 @@ class LoginForm(forms.ModelForm):
     class Meta:
         model = Login
         fields = widgets = {
-            'User_name': forms.TextInput(attrs={'class': 'form-control'}),
-            'Email': forms.TextInput(attrs={'class': 'form-control'}),
-            'Password': forms.TextInput(attrs={'class': 'form-control'}),
+            # 'User_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'Email': forms.TextInput(attrs={'class': 'form-control', "placeholder": "JohnDoe@gmail.com"}),
+            'Password': forms.TextInput(attrs={'class': 'form-control', "placeholder": "*********"})
 
         }
         # "__all__"
