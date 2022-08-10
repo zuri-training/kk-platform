@@ -13,6 +13,7 @@ __Product Design__
     
 . Create User Story,User Persona,Empathy map and User Flow <br>
     -[User Persona Issue](https://github.com/zuri-training/kk-website/issues/15)
+    -[User Story Issue](https://github.com/zuri-training/kk-platform_fe/issues/16)
     -[Empathy Map Issue](https://github.com/zuri-training/kk-website/issues/13)
     -[User Flow Issue](https://github.com/zuri-training/kk-website/issues/14)
     -[Link to User Story,User Persona,Empathy Map and User Flow](https://www.figma.com/file/CjyLBj9bJ4T8czWUrSMITa/TEAM-112_COLFILMS?node-id=0%3A1)
