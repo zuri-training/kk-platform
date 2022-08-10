@@ -19,8 +19,9 @@
     
 * Design the Chatbox <br>
     - [Chatbox Design Issue](https://github.com/zuri-training/kk-platform_fe/issues/9)
-    - [Link to Chatbox for Web]([https://tinyurl.com/mryr5wtp](https://www.figma.com/proto/GbL8dOnV9ar6MsEAtfGyoa/kampus-connect-drafts?page-id=549%3A433&node-id=1014%3A5756&viewport=6338%2C3682%2C0.17&scaling=scale-down&starting-point-node-id=1014%3A5756&show-proto-sidebar=1)    
-    - [Link to Chatbox for Mobile](https://www.figma.com/proto/GbL8dOnV9ar6MsEAtfGyoa/kampus-connect-drafts?page-id=549%3A433&node-id=1014%3A8948&viewport=6338%2C3682%2C0.17&scaling=scale-down&starting-point-node-id=1014%3A8948&show-proto-sidebar=1)   
+    - [Link to Chatbox for Web](https://www.figma.com/proto/GbL8dOnV9ar6MsEAtfGyoa/kampus-connect-drafts?page-id=549%3A433&node-id=1014%3A5756&viewport=6338%2C3682%2C0.17&scaling=scale-down&starting-point-node-id=1014%3A5756&show-proto-sidebar=1)
+    - [Link to Chatbox for Mobile](https://www.figma.com/proto/GbL8dOnV9ar6MsEAtfGyoa/kampus-connect-drafts?page-id=549%3A433&node-id=1014%3A8948&viewport=6338%2C3682%2C0.17&scaling=scale-down&starting-point-node-id=1014%3A8948&show-proto-sidebar=1)
+    
     
     
     
