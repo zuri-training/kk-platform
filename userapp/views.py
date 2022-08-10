@@ -68,17 +68,13 @@ def Login_page(request):
     return render(request=request, template_name="login.html", context={"login_form": form})
 
 
-# def Login_user(request):
-#     if request.method == "POST":
-#         print('This is a POST document')
-#     form = LoginForm(request.POST or None)
-#     if form.is_valid():
-#         form.save()
-#         messages.success(request, "Login successful.")
-#         return redirect("Home")
-#     messages.error(
-#         request, "Login Failed")
-#     return render(request=request, template_name="login.html", context={"login_form": form})
+# LOGOUT FUNCTION
+
+
+def Logout_user(request):
+    logout(request)
+    messages.success(request, "LOGOUT successful.")
+    return redirect('Login')
 
 
 def Watch(request):
