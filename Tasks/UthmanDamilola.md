@@ -7,5 +7,5 @@ Main Project Contributions:
      https://github.com/videlleudeh/cool_Films/commits/main
 
   Log In Page:
-    Link to Issue: https://github.com/zuri-training/kk-website/issues/20
+    Link to Issue: https://github.com/zuri-training/kk-website/issues/20    
     https://github.com/zuri-training/kk-platform/tree/6-login-page-ui-dami
