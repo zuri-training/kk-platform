@@ -154,10 +154,26 @@ input {
   grid-area: 'body';
 }
 
+@media screen and (max-width: 900px) {
+    .main-container {
+      grid-template-columns: 200px 1fr;
+    }
+}
+
 @media (max-width: 768px) {
   .main-container {
     grid-template-areas: 'main' 'sidebar';
     grid-template-columns: none;
+  }
+
+  .body-container {
+    margin: 26px 20px 26px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .body-container {
+    margin: 26px 15px;
   }
 }
 
@@ -168,14 +184,14 @@ input {
 .navbar {
   height: 50px;
   display: grid;
-  /* grid-template-columns: 1fr 200px; */
   grid-template-columns: 3fr 1fr;
   text-align: left;
-  gap: 90px;
+  gap: 50px;
 }
 
+
 .logo {
-  height: 30px;
+  width: 77px;
 }
 
 .logo img {
@@ -183,7 +199,7 @@ input {
 }
 
 .navbar__desktop {
-    display: grid;
+    display: block;
 
 }
 
@@ -191,38 +207,42 @@ input {
     display: none;
 }
 
-.navbar__search {
-  /* display: flex; */
-  /* justify-content: right; */
-}
 .input__search {
   display: flex;
   align-self: end;
   justify-content: right;
   height: 50px;
-  width: 80%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 900px;
   margin: auto 0 0;
 }
 
 .input__search input {
+  padding: 10px;
   border: 1px solid var(--color-gray-10);
+  width: 70%;
+  height: 100%;
+  border-radius: 0;
+  outline: unset
+}
+
+.input__search-btn {
+  width: 10%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.icon-search {
+    height: 20px;
+    width: 20px;
 }
 
 .user__profile {
   display: flex;
-  justify-content: space-between;
+  gap: 15px;
+  justify-content: right;
   align-items: center;
   align-content: center;
-}
-
-.user__avatar {
-    min-width: 40px;
-    width: 40px;
-    min-height: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--color-main);
 }
 
 .user__notifications {
@@ -230,13 +250,13 @@ input {
 }
 
 .user__notifications .icon-notify {
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
 }
 
 .notifications {
-  height: 20px;
-  width: 20px;
+  height: 15px;
+  width: 15px;
   background-color: var(--color-secondary-40);
   border-radius: 50%;
   position: absolute;
@@ -244,15 +264,55 @@ input {
   right: -2px;
 }
 
-.user__name {
-  font-size: 1em;
-  font-weight: 600;
-  line-height: 20px;
-  color: var(--color-gray-60);
-  margin: 0;
+.user__avatar {
+  min-width: 30px;
+  width: 30px;
+  min-height: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--color-main);
 }
 
-@media screen and (max-screen: 768px) {
+.user__name {
+  font-size: 0.8em;
+  font-weight: 600;
+  line-height: 20px;
+  max-width: 120px;
+  color: var(--color-gray-60);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1024px) {
+  .input__search-btn {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .input__search input {
+    width: 80%;
+  }
+  
+  .input__search-btn {
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .user__name {
+    max-width: 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        grid-template-columns: 80px 1fr 50px;
+        gap: 20px;
+    }
+
     .navbar__desktop {
         display: none;
     }
@@ -260,7 +320,72 @@ input {
     .navbar__mobile {
         display: block;
     }
+
+    .input__search {
+      position: relative
+    }
+
+   
+    label.icon-search {
+      position: relative;
+      width: 100%;
+    }
+
+    label.icon-search {
+      height: 25px;
+      width: 25px;
+      stroke: var(--color-gray-60);
+      position: absolute;
+      right: 20px;
+      bottom: 25%;
+      cursor: text;
+      z-index: -2;
+  }
+    
+input:focus ~ label.icon-search svg,
+input:not(:placeholder-shown) ~ label.icon-search svg
+{
+  stroke: #fff;
 }
+    .input__search input {
+      width: 100%;
+      border: unset;
+    }
+
+    .input__search input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: var(--color-white);
+      opacity: 1; /* Firefox */
+    }
+    
+    .input__search input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: var(--color-white);
+    }
+    
+    .input__search input::-ms-input-placeholder { /* Microsoft Edge */
+      color: var(--color-white);
+    }
+
+    .input__search-btn {
+      width: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    grid-template-columns: 80px 1fr 30px;
+    gap: 20px;
+  }
+
+  .user__notifications .icon-notify {
+    height: 25px;
+    width: 25px;
+  }
+
+  label.icon-search {
+    right: 10px;
+  }
+}
+
 /*==============================
 =>  Sidebar Section
 ================================*/
@@ -289,6 +414,7 @@ input {
 
 .sidebar__logo {
   text-align: center;
+
 }
 
 .sidebar__logo-link {
@@ -338,6 +464,12 @@ input {
 
 .sidebar__item-text {
   font-size: inherit;
+}
+
+@media only screen and (max-width: 900px) {
+  .sidebar__logo img {
+    width: 150px;
+}
 }
 
 @media only screen and (max-width: 768px) {

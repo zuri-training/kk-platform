@@ -1,31 +1,37 @@
 {% load static %}
 
-<!-- Desktop & Tablet view  -->
-<!-- <div class="navbar"> -->
+
     <div class="logo navbar__mobile">
         <img src="{% static 'images/logo.webp' %}" alt="logo" />
     </div>
     <div class="navbar__search">
         <form class="input__search">
             <!-- <img src="{% static 'images/icons/icon-search.svg' %}" alt=""> -->
+            
             <input type="text" placeholder="Search" />
-            <button class="btn" type="submit">
-                <img src="{% static 'images/icons/icon-search.svg' %}" alt="">
+            <label class="icon-search navbar__mobile">
+                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.7717 21L17.2857 16.506M19.7717 10.5C19.7717 12.7543 18.8761 14.9163 17.2821 16.5104C15.688 18.1045 13.526 19 11.2717 19C9.01733 19 6.85532 18.1045 5.26126 16.5104C3.6672 14.9163 2.77167 12.7543 2.77167 10.5C2.77167 8.24566 3.6672 6.08365 5.26126 4.48959C6.85532 2.89553 9.01733 2 11.2717 2C13.526 2 15.688 2.89553 17.2821 4.48959C18.8761 6.08365 19.7717 8.24566 19.7717 10.5V10.5Z" stroke="" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </label>
+            <button class="btn input__search-btn navbar__desktop" type="submit">
+                <svg class="icon-search" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.7717 21L17.2857 16.506M19.7717 10.5C19.7717 12.7543 18.8761 14.9163 17.2821 16.5104C15.688 18.1045 13.526 19 11.2717 19C9.01733 19 6.85532 18.1045 5.26126 16.5104C3.6672 14.9163 2.77167 12.7543 2.77167 10.5C2.77167 8.24566 3.6672 6.08365 5.26126 4.48959C6.85532 2.89553 9.01733 2 11.2717 2C13.526 2 15.688 2.89553 17.2821 4.48959C18.8761 6.08365 19.7717 8.24566 19.7717 10.5V10.5Z" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                </svg>
             </button>
         </form>
     </div>
 
     <div class="user__profile">
         <div class="user__notifications">
-            <!-- <img class="icon-notify" src="{% static 'images/icons/icon-notify.svg' %}" alt=""> -->
             <svg class="icon-notify" width="34" height="41" viewBox="0 0 34 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.0006 40.834C19.2923 40.834 21.1673 38.959 21.1673 36.6673H12.834C12.834 38.959 14.709 40.834 17.0006 40.834ZM29.5006 31.459V17.9173C29.5006 11.5215 26.1048 6.16732 20.1256 4.75065V3.33398C20.1256 1.60482 18.7298 0.208984 17.0006 0.208984C15.2715 0.208984 13.8756 1.60482 13.8756 3.33398V4.75065C7.91732 6.16732 4.50065 11.5007 4.50065 17.9173V31.459L0.333984 32.5007V34.584H33.6673V32.5007L29.5006 31.459ZM27.4173 32.5007H6.58398V17.9173C6.58398 12.709 9.70898 5.41732 17.0006 6.45899C24.2923 5.41732 27.4173 12.7507 27.4173 17.9173V32.5007Z" fill="#212529"/>
             </svg>                
             <div class="notifications"></div>
         </div>
-        <div class="user__avatar">
+        <div class="user__avatar navbar__desktop">
             <!-- <img src="" alt="User's profile picture" /> -->
         </div>
-        <p class="user__name">Jenny Wilson</p>
+        <p class="user__name navbar__desktop">Jenny Wilson</p>
     </div>
 <!-- </div> -->
