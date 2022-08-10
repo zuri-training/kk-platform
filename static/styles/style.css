@@ -113,6 +113,10 @@ hr {
     border: none;
 }
 
+input {
+    background: inherit;
+}
+
 /*========== components ==========*/
 .container {
     max-width: 120rem;
@@ -137,6 +141,23 @@ hr {
   height: inherit;
 }
 
+.navbar__desktop {
+    display: block;
+}
+
+.navbar__mobile {
+    display: none;
+}
+
+@media screen and (max-screen: 500px) {
+    .navbar__desktop {
+        display: none;
+    }
+
+    .navbar__mobile {
+        display: block;
+    }
+}
 /*==============================
 =>  Sidebar Section
 ================================*/
