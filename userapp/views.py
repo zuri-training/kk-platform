@@ -54,7 +54,3 @@ def Login(request):
         request, "Login Failed")
     return render(request=request, template_name="login.html", context={"login_form": form})
 
-#WATCH MOVIES FUNCTION
-
-def Watch(request):
-    return render(request=request, template_name="watchpage.html")
