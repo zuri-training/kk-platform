@@ -284,13 +284,8 @@ hr {
 
 /* Harrylever's Edit */
 .main_section {
-  border: 1px solid gold;
   display: flex;
 }
-
-/* .side_section {
-  border: 1px solid black;
-} */
 
 .side_section_1 {
   height: 100vh;
@@ -310,4 +305,10 @@ hr {
   max-width: 78vw;
   /* overflow-y: scroll; */
   /* border: 1px solid black; */
+}
+
+@media (max-width: 500px) {
+  .side_section_2 {
+    margin-left: 0;
+  }  
 }
