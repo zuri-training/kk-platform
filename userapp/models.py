@@ -11,6 +11,15 @@ class User_ID (models.Model):
         return self.User_ID
 
 
+class User_Main(models.Model):
+    Full_Name = models.CharField(max_length=100)
+    Email = models.EmailField(max_length=100)
+    Password = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.Full_Name
+
+
 class User(models.Model):
     First_name = models.CharField(max_length=100)
     Last_name = models.CharField(max_length=100)
@@ -102,7 +111,7 @@ class History(models.Model):
 # VIDEO REACTION MODEL
 class Video_Reaction(models.Model):
     Video = models.ForeignKey(Video, on_delete=models.CASCADE)
-    User = models.ForeignKey(User, on_delete=models.CASCADE)
+    User_Main = models.ForeignKey(User_Main, on_delete=models.CASCADE)
     VIDEO_REACTION_CHOICES = (
         ("1", "Like"),
         ("2", "Love"),
@@ -120,7 +129,7 @@ class Video_Reaction(models.Model):
 # VIDEO SHARING MODEL
 class Video_share(models.Model):
     Video = models.ForeignKey(Video, on_delete=models.CASCADE)
-    User = models.ForeignKey(User, on_delete=models.CASCADE)
+    User_Main = models.ForeignKey(User_Main, on_delete=models.CASCADE)
     Video_share_count = models.AutoField(primary_key=True, default='0')
 
     def __str__(self):
