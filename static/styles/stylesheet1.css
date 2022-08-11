@@ -10,6 +10,15 @@
     height: 100%;
     background-position: center;
   }
+
+  .main_signup_container{
+    background-image: url(images/BG.png);
+  }
+
+  p{
+    color: white;
+    text-decoration: none;
+  }
   
   .container1{
     text-align: center; 
@@ -86,13 +95,14 @@
     width: 480px;
     font-size: 1.3rem;
     margin-top: 20px;
+    background-color: #0A2472;
   }
   
   .schoolid{
     padding: 5px ;
     border-radius: 10px;
     width: 480px;
-    background-color: blue;
+    background-color: #0A2472;
     color: white;
     text-align: center;
     height: 50px;
