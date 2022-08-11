@@ -98,7 +98,6 @@ def Validate_id(request):
         return redirect('Login')
         messages.success(
             request, "ID pictures Uploaded, Proceed to Login Now")
-
     else:
         form = ValidateForm()
     return render(request, "validateid.html", context={"ValidateForm": form})
@@ -137,7 +136,7 @@ def Video_Upload(request):
     # def _upload_file_view(request):
 
 
-# Library functio below
+# Library function below
 
 def Library(request):
     return render(request, "library.html")
