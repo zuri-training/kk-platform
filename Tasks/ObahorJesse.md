@@ -18,7 +18,7 @@
  
 * Design Account/Profile Page <br>
     - [Account/Profile Page Design Issue](https://github.com/zuri-training/kk-platform_fe/issues/7)
-    - [Link to Account/Profile Page Design (web)](https://www.figma.com/proto/GbL8dOnV9ar6MsEAtfGyoa/kampus-connect-drafts?page-id=549%3A433&node-id=1014%3A3284&viewport=3137%2C1968%2C0.1&scaling=scale-down&starting-point-node-id=1014%3A3284&show-proto-sidebar=1)
+    - [Link to Account/Profile Page Design (web)](https://www.figma.com/proto/GbL8dOnV9ar6MsEAtfGyoa/kampus-connect-drafts?page-id=549%3A433&node-id=1014%3A4116&viewport=6338%2C3682%2C0.17&scaling=scale-down&starting-point-node-id=1014%3A4116&show-proto-sidebar=1)
     - [Link to Account/Profile Page Design (mobile)](https://www.figma.com/proto/GbL8dOnV9ar6MsEAtfGyoa/kampus-connect-drafts?page-id=549%3A433&node-id=1014%3A8578&viewport=3137%2C1968%2C0.1&scaling=scale-down&starting-point-node-id=1014%3A8578&show-proto-sidebar=1)
  
  

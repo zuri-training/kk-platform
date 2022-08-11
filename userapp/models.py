@@ -11,6 +11,15 @@ class User_ID (models.Model):
         return self.User_ID
 
 
+class User_Main(models.Model):
+    Full_Name = models.CharField(max_length=100)
+    Email = models.EmailField(max_length=100)
+    Password = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.Full_Name
+
+
 class User(models.Model):
     First_name = models.CharField(max_length=100)
     Last_name = models.CharField(max_length=100)
@@ -102,7 +111,7 @@ class History(models.Model):
 # VIDEO REACTION MODEL
 class Video_Reaction(models.Model):
     Video = models.ForeignKey(Video, on_delete=models.CASCADE)
-    User = models.ForeignKey(User, on_delete=models.CASCADE)
+    User_Main = models.ForeignKey(User_Main, on_delete=models.CASCADE)
     VIDEO_REACTION_CHOICES = (
         ("1", "Like"),
         ("2", "Love"),
@@ -120,8 +129,28 @@ class Video_Reaction(models.Model):
 # VIDEO SHARING MODEL
 class Video_share(models.Model):
     Video = models.ForeignKey(Video, on_delete=models.CASCADE)
-    User = models.ForeignKey(User, on_delete=models.CASCADE)
+    User_Main = models.ForeignKey(User_Main, on_delete=models.CASCADE)
     Video_share_count = models.AutoField(primary_key=True, default='0')
 
     def __str__(self):
         return self.Video_share_count
+
+
+# Validation MODEL/CATEGORY
+
+
+class Validation(models.Model):
+    User_Main = models.OneToOneField(User_Main, on_delete=models.CASCADE)
+    School_ID_Front_View = models.ImageField(upload_to='idcards_frontview')
+    School_ID_Back_View = models.ImageField(upload_to='idcards_backview')
+
+    # def __str__(self):
+    #     return self.User
+
+
+# Validation2
+class Validation2(models.Model):
+    School_Email = models.EmailField(max_length=100)
+
+    def __str__(self):
+        return self.School_Email

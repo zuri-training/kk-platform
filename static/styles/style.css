@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --color-main: rgba(10, 36, 114, 1);
@@ -53,8 +53,7 @@
 /*========== base styles ==========*/
 
 * {
-  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
+  font-family:'Rubik', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -63,29 +62,7 @@
 }
 
 html {
-  font-size: 56.25%;
-}
-
-@media only screen and (min-width: 1200px) {
-  html {
-    font-size: 62.5%;
-  }
-}
-
-@media only screen and (min-width: 2100px) {
-  html {
-    font-size: 75%;
-  }
-}
-
-body {
-  line-height: 1.6;
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--color-gray-40);
-  background-color: var(--color-white);
-  min-height: 100vh;
-  /* position: relative; */
+  overflow: hidden;
 }
 
 img {
@@ -99,12 +76,6 @@ a {
   cursor: pointer;
 }
 
-p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25em;
-    line-height: 1.375em;
-}
 
 hr {
     background-color: var(--color-gray-10);
@@ -181,6 +152,7 @@ hr {
 }
 
 .sidebar__item p {
+  margin-top: 12px;
   display: flex;
   align-items: center;
   width: inherit;
@@ -206,6 +178,7 @@ hr {
 }
 
 .sidebar__item-text {
+  margin-top: 5px;
   font-size: inherit;
 }
 
@@ -285,6 +258,7 @@ hr {
 /* Harrylever's Edit */
 .main_section {
   display: flex;
+  overflow-y: scroll;
 }
 
 .side_section_1 {
@@ -292,8 +266,6 @@ hr {
   width: 100%;
   max-width: 22vw;
   position: fixed;
-  /* border: 4px solid black; */
-  /* z-index: 1; */
   top: 0;
   left: 0;
 }
@@ -301,14 +273,137 @@ hr {
 .side_section_2 {
   margin-left: 22vw;
   height: 100vh;
-  width: 100%;
-  max-width: 78vw;
-  /* overflow-y: scroll; */
-  /* border: 1px solid black; */
+  width: 78vw;
 }
 
 @media (max-width: 500px) {
   .side_section_2 {
     margin-left: 0;
   }  
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  position: absolute;
+  top: 0%;
+  z-index: 100;
+  width: 78vw;
+  height: 24vh;
+  flex-direction: column;
+}
+
+/* Header Nav bar */
+.header_navbar {
+  display: flex;
+  width: 100%;
+  padding-top: 25px;
+  align-items: center;
+}
+.header_navbar_item_1 {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 55%;
+  height: 7vh;
+}
+.header_navbar_item_1 input {
+  width: 71%;
+  height: 100%;
+  padding: 7px 10px;
+  outline: none;
+  border: .5px solid #ccc;
+}
+.search_icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: #334989;
+}
+.search_icon_container i {
+  color: #fff;
+}
+.header_navbar_item_2 {
+  width: 30%;
+  margin-left: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.header_navbar_item_2 > i {
+  font-size: 30px;
+}
+.notification_icon_container {
+  border: none;
+  outline: none;
+  margin-left: 40px;
+  background-color: transparent;
+}
+.notification_icon_container >  i {
+  font-size: 28px;
+}
+.header_navbar_item_2 > button {
+  margin-right: 20px;
+}
+.header_nav_img_container {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.header_nav_img_container img {
+  width: 100%;
+  object-fit: contain;
+}
+.profile_det {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.profile_det div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.profile_det p {
+  padding-top: 7px;
+  margin-left: 10px;
+}
+
+
+.header_links_container {
+  padding: 40px 40px;
+}
+
+.header_link_sub_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header_link_sub_container div {
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  padding: 1px 9px;
+}
+.header_link_sub_container div a {
+  color: #6B6E70;
+}
+.header_link_sub_container div a:hover {
+  color: #fff;
+}
+.header_link_sub_container div:hover {
+  cursor: pointer;
+  background-color: #334889e0;
+  transition-duration: 667ms;
+  color: #fff;
+}
+.active {
+  background-color: #334989;
+  color: #fff !important;
 }
