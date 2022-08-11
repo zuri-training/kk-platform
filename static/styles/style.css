@@ -182,7 +182,7 @@ hr {
   font-size: inherit;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
     .sidebar.desktop-view {
         display: none;
     }
@@ -258,7 +258,7 @@ hr {
 /* Harrylever's Edit */
 .main_section {
   display: flex;
-  overflow-y: scroll;
+  overflow-x: scroll;
 }
 
 .side_section_1 {
@@ -273,10 +273,10 @@ hr {
 .side_section_2 {
   margin-left: 22vw;
   height: 100vh;
-  width: 78vw;
+  width: 100vw;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .side_section_2 {
     margin-left: 0;
   }  
@@ -288,8 +288,11 @@ header {
   position: absolute;
   top: 0%;
   z-index: 100;
+  /* width: 78vw;
+  margin-left: 22vw;
+  height: 24vh; */
+  height: 18vh;
   width: 78vw;
-  height: 24vh;
   flex-direction: column;
 }
 
@@ -329,10 +332,10 @@ header {
 }
 .header_navbar_item_2 {
   width: 30%;
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
   display: flex;
-  align-items: center;
-  justify-content: left;
+  /* align-items: center; */
+  justify-content: flex-end;
 }
 .header_navbar_item_2 > i {
   font-size: 30px;
@@ -358,6 +361,7 @@ header {
 .header_nav_img_container img {
   width: 100%;
   object-fit: contain;
+  margin-right: 10px;
 }
 .profile_det {
   display: flex;
@@ -371,7 +375,7 @@ header {
 }
 .profile_det p {
   padding-top: 7px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 
@@ -406,4 +410,10 @@ header {
 .active {
   background-color: #334989;
   color: #fff !important;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    display: none;
+  }
 }

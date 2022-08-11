@@ -1,8 +1,42 @@
-#navbar-search-input{
-    font-size: 16px;
+* {
+    font-size: inherit;
+}
+#watch-main {
+    margin-top: 18vh;
+}
+#all-button, #search-btn {
+    background-color: #334989;
+    color: white;
 }
 
-#watch-category button {
-    font-size: 16px;
-    background-color: #F9F9F9;
+#watch-category button:hover {
+    background-color: #334989;
+    color: white;
+} 
+
+#watch-links a {
+    color: black;    
+}
+
+#subscribe-btn {
+    background-color: #334989;
+    color: white;
+}
+
+@media (min-width: 992px)  {
+    #watch-play {
+        width: 75%;
+    }
+}
+
+@media (max-width: 769px) {
+    #watch-main {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 400px) {
+    #watch-links a {
+        margin: 0;
+    }
 }
