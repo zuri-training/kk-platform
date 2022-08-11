@@ -34,3 +34,9 @@
         margin-top: 0;
     }
 }
+
+@media (min-width: 400px) {
+    #watch-links a {
+        margin: 0;
+    }
+}
