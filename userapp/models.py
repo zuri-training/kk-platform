@@ -134,3 +134,23 @@ class Video_share(models.Model):
 
     def __str__(self):
         return self.Video_share_count
+
+
+# Validation MODEL/CATEGORY
+
+
+class Validation(models.Model):
+    User_Main = models.OneToOneField(User_Main, on_delete=models.CASCADE)
+    School_ID_Front_View = models.ImageField(upload_to='idcards_frontview')
+    School_ID_Back_View = models.ImageField(upload_to='idcards_backview')
+
+    # def __str__(self):
+    #     return self.User
+
+
+# Validation2
+class Validation2(models.Model):
+    School_Email = models.EmailField(max_length=100)
+
+    def __str__(self):
+        return self.School_Email

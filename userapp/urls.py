@@ -10,4 +10,6 @@ urlpatterns = [
     path("WatchPage/", views.Watch, name='Watch-Page'),
     path("new_signup/", views.SignUpView, name='New-Signup-Page'),
     path("logout/", views.Logout_user, name='Logout'),
+    path("validateid/", views.Validate_id, name='Validate'),
+    path("validation2/", views.Validation2, name='Validation'),
 ]

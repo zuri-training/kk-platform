@@ -32,14 +32,13 @@ def Home(request):
 
 def SignUpView(request):
     if request.method == "POST":
-        login(request, user)
         Full_Name = request.POST['userfullname']
         Email = request.POST['emailaddress']
         Password = request.POST['password']
         new_user = User_Main(Full_Name=Full_Name,
                              Email=Email, Password=Password)
         new_user.save()
-        return redirect("Home")
+        return redirect("Validation")
     return render(request=request, template_name="signup2.html")
 
 
@@ -83,3 +82,32 @@ def Watch(request):
 
 # def New_Signup(request):
 #     return render(request=request, template_name="signup2.html")
+
+
+# VALIDATION IMAGES FUNCTION
+
+def Validate_id(request):
+    data = Validation.objects.all()
+    form = ValidateForm(request.POST, request.FILES)
+    if form.is_valid():
+        form.save()
+        return redirect('Login')
+        messages.success(
+            request, "ID pictures Uploaded, Proceed to Login Now")
+
+    else:
+        form = ValidateForm()
+    return render(request, "validateid.html", context={"ValidateForm": form})
+
+
+# VALIDATION 2 SCHOOL ID AND EMAIL
+def Validation2(request):
+    form = ValidateForm2(request.POST, request.FILES)
+    if request.method == "POST":
+        if form.is_valid():
+            form.save()
+            messages.success(request, "School Email Submitted.")
+            return redirect("Validate")
+
+    return render(request=request, template_name="validation2.html", context={"validation2_form": form})
+    # return render(request, "validation2.html")

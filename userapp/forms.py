@@ -43,3 +43,24 @@ class LoginForm(forms.ModelForm):
 
         }
         # "__all__"
+
+
+# VALIDATE FORM
+class ValidateForm(forms.ModelForm):
+    class Meta:
+        model = Validation
+        fields = "__all__"
+        widgets = {
+            'Your User Name': forms.TextInput(attrs={'class': 'form-control'}),
+            'Your Student ID[Front View]': forms.TextInput(attrs={'class': 'form-control'}),
+            'Your Student ID[Back View]': forms.PasswordInput(attrs={'class': 'form-control'}),
+        }
+
+
+class ValidateForm2(forms.ModelForm):
+    class Meta:
+        model = Validation2
+        fields = "__all__"
+        widgets = {
+            'School_Email': forms.EmailInput(attrs={'class': 'form-control'}),
+        }
