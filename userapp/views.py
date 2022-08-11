@@ -139,4 +139,5 @@ def Video_Upload(request):
 # Library function below
 
 def Library(request):
-    return render(request, "library.html")
+    videoall = Video_Files.objects.all()
+    return render(request, "library.html", context={"videoall": videoall})
