@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import User
+from .models import User_Main
 from .models import Tag
 from .models import Video
 from .models import User_ID
@@ -11,7 +11,7 @@ from .models import Video_share
 from .models import Login
 
 # Register your models here.
-admin.site.register(User)
+admin.site.register(User_Main)
 admin.site.register(Tag)
 admin.site.register(Video)
 admin.site.register(User_ID)
