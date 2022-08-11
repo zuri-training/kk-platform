@@ -258,7 +258,7 @@ hr {
 /* Harrylever's Edit */
 .main_section {
   display: flex;
-  /* overflow-y: scroll; */
+  overflow-x: scroll;
 }
 
 .side_section_1 {
