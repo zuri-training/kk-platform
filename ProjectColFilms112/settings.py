@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'ProjectColFilms112.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
+        'NAME': 'kampuskonnect',
         'USER': 'postgres',
         'PASSWORD': 'team112',
         'HOST': 'localhost',
