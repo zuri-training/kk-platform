@@ -7,8 +7,9 @@
     background-color: #F9F9F9;
 }
 
-#all-button {
+#all-button, #search-btn {
     background-color: #334989;
+    color: white;
 }
 
 #watch-category button:hover {
@@ -37,8 +38,8 @@
     }
 } */
 
-@media (max-width: 500px) {
-    #watch-main {
-        width: auto;
+@media (min-width: 992px) {
+    #watch-play {
+        width: 75%;
     }
 }
