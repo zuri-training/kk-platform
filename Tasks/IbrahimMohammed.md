@@ -6,9 +6,8 @@ FULLSTACK
         [Back-end - Database Schema](https://github.com/zuri-training/kk-platform/issues/17)
         [DB-SCHEMA DESIGN](https://github.com/zuri-training/kk-platform/blob/main/Proj-112-db-schema.drawio.png)
 
-
- 
-
+   [TASKS](https://github.com/zuri-training/kk-platform/labels/Ibrahim)
+   
 
 
 
