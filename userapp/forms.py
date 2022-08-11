@@ -64,3 +64,24 @@ class ValidateForm2(forms.ModelForm):
         widgets = {
             'School_Email': forms.EmailInput(attrs={'class': 'form-control'}),
         }
+
+
+# VIDEO UPLOAD FORM
+class VideoForm(forms.ModelForm):
+    class Meta:
+        model = Video_Files
+        fields = ("Title", "Video_description",
+                  "Video_File", "Video_Visibility")
+        widgets = {
+            # 'Date_Time': forms.TextInput(attrs={'class': 'form-control'}),
+            'Title': forms.TextInput(attrs={'class': 'form-control',
+                                            'placeholder': 'Enter Video Title'}),
+            'Video_description': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter Video Description', 'title': ' '}),
+            'Video_File': forms.FileInput(attrs={'class': 'form-control', 'placeholder': 'Upload Video'}),
+            'Video_Visibility': forms.Select(attrs={'class': 'form-control', 'placeholder': 'Public Or Private'})
+        }
+
+
+# def __init__(self, *args, **kwargs):
+#     super(VideoForm, self).__init__(*args, **kwargs)
+#     self.fields['Title'].required = False

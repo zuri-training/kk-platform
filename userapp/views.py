@@ -25,7 +25,9 @@ class UserList(ListView):
 
 @login_required(login_url='Login')
 def Home(request):
-    return render(request, "home.html")
+    videoall = Video_Files.objects.all()
+    return render(request, "home.html", context={"videoall": videoall})
+
 
 # SIGN UP FUNCTION
 
@@ -113,3 +115,29 @@ def Validation2(request):
 
     return render(request=request, template_name="validation2.html", context={"validation2_form": form})
     # return render(request, "validation2.html")
+
+# VIDEO UPLOAD FUNCTION
+
+
+@csrf_exempt
+@login_required(login_url='Login')
+def Video_Upload(request):
+    form = VideoForm(request.POST, request.FILES)
+    videoall = Video_Files.objects.all()
+    if request.method == "POST":
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Upload successful.")
+            return redirect("Home")
+    else:
+        # form = VideoForm()
+        print("done")
+    return render(request=request, template_name=("video.html"), context={"video_form": form})
+
+    # def _upload_file_view(request):
+
+
+# Library functio below
+
+def Library(request):
+    return render(request, "library.html")
