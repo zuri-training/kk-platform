@@ -1,3 +1,4 @@
+from ast import Return
 from django.shortcuts import render
 from django.shortcuts import render, redirect
 from django.views.generic.list import ListView
@@ -52,3 +53,9 @@ def Login(request):
     messages.error(
         request, "Login Failed")
     return render(request=request, template_name="login.html", context={"login_form": form})
+
+def Watch(request):
+    return render(request=request, template_name="watchpage.html")
+
+def New_Signup(request):
+    return render(request=request, template_name="signup2.html")
