@@ -48,7 +48,7 @@ class Login(models.Model):
     Password = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.User_name, self.Email, s
+        return self.User_name, self.Email,
 # TAG MODEL/CATEGORY
 
 
@@ -112,7 +112,7 @@ class History(models.Model):
     User_ID = models.ForeignKey(User_ID, on_delete=models.CASCADE)
 
     def __str__(self):
-        returnself.Video
+        return self.Video
 
 
 # VIDEO REACTION MODEL
