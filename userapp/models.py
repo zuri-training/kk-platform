@@ -93,6 +93,7 @@ class Comment(models.Model):
     User_ID = models.ForeignKey(User_ID, on_delete=models.CASCADE)
     Date_Time = models.DateTimeField(auto_now_add=True)
 
+    
     def __str__(self):
         return self.Comments
 
