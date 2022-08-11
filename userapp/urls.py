@@ -12,4 +12,7 @@ urlpatterns = [
     path("logout/", views.Logout_user, name='Logout'),
     path("validateid/", views.Validate_id, name='Validate'),
     path("validation2/", views.Validation2, name='Validation'),
+    path("Video/", views.Video_Upload, name='Video'),
+    path("Library/", views.Library, name='library'),
+
 ]
