@@ -75,6 +75,8 @@ def Logout_user(request):
     messages.success(request, "LOGOUT successful.")
     return redirect('Login')
 
+# WATCH FUNCTION
+
 
 def Watch(request):
     return render(request=request, template_name="watchpage.html")
