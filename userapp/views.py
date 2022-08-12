@@ -141,3 +141,20 @@ def Video_Upload(request):
 def Library(request):
     videoall = Video_Files.objects.all()
     return render(request, "library.html", context={"videoall": videoall})
+
+
+# COMMENT FUNCTION
+@login_required(login_url='Login')
+def Comment(request):
+
+    if request.method == "POST":
+        print('This is a POST document')
+
+    form = CommentForm(request.POST or None)
+    if form.is_valid():
+        Comment = form.save()
+        messages.success(request, "Comment successful.")
+        return redirect("Home")
+        messages.error(
+            request, "Unsuccessful Commenting.")
+    return render(request=request, template_name="comment.html", context={"comment_form": form})

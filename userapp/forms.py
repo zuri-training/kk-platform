@@ -80,8 +80,17 @@ class VideoForm(forms.ModelForm):
             'Video_File': forms.FileInput(attrs={'class': 'form-control', 'placeholder': 'Upload Video'}),
             'Video_Visibility': forms.Select(attrs={'class': 'form-control', 'placeholder': 'Public Or Private'})
         }
+# COMMENT FORM
 
 
-# def __init__(self, *args, **kwargs):
-#     super(VideoForm, self).__init__(*args, **kwargs)
-#     self.fields['Title'].required = False
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ("User_ID", "Comments")
+        # "__all__"
+        widgets = {
+            'Comments_ID': forms.TextInput(attrs={'class': 'form-control'}),
+            'Comments': forms.TextInput(attrs={'class': 'form-control', "placeholder": "Enter Your Comment"}),
+            'User_ID': forms.TextInput(attrs={'class': 'form-control', "placeholder": "Select Your User ID"}),
+
+        }

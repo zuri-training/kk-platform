@@ -35,7 +35,9 @@
 	</head>
 	<div class="container py-5" style="height: 1000px; padding-bottom: 50px">
 		<form method="POST" action="" enctype="multipart/form-data">
-			<h1 style="text-align: center">Upload A Video</h1>
+			<h1 style="text-align: center">
+				Upload A Video Of Less Than 15 Minutes Watch-Time
+			</h1>
 			{% csrf_token %} {{ video_form.as_p }}
 			<button class="btn btn-primary" type="submit">Upload</button>
 		</form>
