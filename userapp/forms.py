@@ -37,9 +37,60 @@ class LoginForm(forms.ModelForm):
     class Meta:
         model = Login
         fields = widgets = {
-            'User_name': forms.TextInput(attrs={'class': 'form-control'}),
-            'Email': forms.TextInput(attrs={'class': 'form-control'}),
-            'Password': forms.TextInput(attrs={'class': 'form-control'}),
+            # 'User_name': forms.TextInput(attrs={'class': 'form-control'}),
+            'Email': forms.TextInput(attrs={'class': 'form-control', "placeholder": "JohnDoe@gmail.com"}),
+            'Password': forms.TextInput(attrs={'class': 'form-control', "placeholder": "*********"})
 
         }
         # "__all__"
+
+
+# VALIDATE FORM
+class ValidateForm(forms.ModelForm):
+    class Meta:
+        model = Validation
+        fields = "__all__"
+        widgets = {
+            'Your User Name': forms.TextInput(attrs={'class': 'form-control'}),
+            'Your Student ID[Front View]': forms.TextInput(attrs={'class': 'form-control'}),
+            'Your Student ID[Back View]': forms.PasswordInput(attrs={'class': 'form-control'}),
+        }
+
+
+class ValidateForm2(forms.ModelForm):
+    class Meta:
+        model = Validation2
+        fields = "__all__"
+        widgets = {
+            'School_Email': forms.EmailInput(attrs={'class': 'form-control'}),
+        }
+
+
+# VIDEO UPLOAD FORM
+class VideoForm(forms.ModelForm):
+    class Meta:
+        model = Video_Files
+        fields = ("Title", "Video_description",
+                  "Video_File", "Video_Visibility")
+        widgets = {
+            # 'Date_Time': forms.TextInput(attrs={'class': 'form-control'}),
+            'Title': forms.TextInput(attrs={'class': 'form-control',
+                                            'placeholder': 'Enter Video Title'}),
+            'Video_description': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter Video Description', 'title': ' '}),
+            'Video_File': forms.FileInput(attrs={'class': 'form-control', 'placeholder': 'Upload Video'}),
+            'Video_Visibility': forms.Select(attrs={'class': 'form-control', 'placeholder': 'Public Or Private'})
+        }
+# COMMENT FORM
+
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ("User_ID", "Comments")
+        # "__all__"
+        widgets = {
+            'Comments_ID': forms.TextInput(attrs={'class': 'form-control'}),
+            'Comments': forms.TextInput(attrs={'class': 'form-control', "placeholder": "Enter Your Comment"}),
+            'User_ID': forms.TextInput(attrs={'class': 'form-control', "placeholder": "Select Your User ID"}),
+
+        }
