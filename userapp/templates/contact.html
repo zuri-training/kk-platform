@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel='stylesheet' href="{% static 'styles/contact.css' %}"
+    type='text/css' type='text/css'> {% load static %}
+  </head>
+  <body>
+    <div class="container py-sm-5 pt-4">
+      <div class="container1b">
+        <div>
+          <img
+            src="{% static 'styles/images/Frame 2.png' %}"
+            alt="Kampus Konnect Logo"
+          />
+        </div>
+        <div class="container1binner">
+            <p class="mx-5 pt-2 text-center"><a href="{% url 'Home'%}" style="color: white; text-decoration: none">Home</a></p>
+            <p><a href="{% url 'ContactUs'%}" class="btn btn-primary mt-0 active" id="cnt-button" style="color: white; text-decoration: none">Contact us</a></p>
+        </div>
+      </div>
+      <form method="POST" action="">
+        <div class="text-center" id="heading">
+            <h1>Contact Us</h1><br>
+            <p>One of our workspace expert will reach out to you based on our communication preference</p>
+        </div>
+
+        <div class="mb-3 mt-3">
+            <label for="full-name" class="form-label">Full Name</label>
+            <input type="text" class="form-control form-control-lg" id="full-name" placeholder="Jane Doe" name="fname">
+        </div>
+        <div class="my-4">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control form-control-lg" id="email" placeholder="e.g @JaneDoe.gmail.con" name="email">
+        </div>
+        <div class="my-4">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control form-control-lg" id="subject" name="subject">
+        </div>
+        <div class="my-4">
+            <label for="comment">How Can We Help You?</label>
+            <textarea class="form-control" rows="5" id="comment" placeholder="Write a message" name="text"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary d-inline-flex flex-end">Send</button>
+      </form>
+    </div>
+  </body>
+</html>

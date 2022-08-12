@@ -15,5 +15,5 @@ urlpatterns = [
     path("Video/", views.Video_Upload, name='Video'),
     path("Library/", views.Library, name='library'),
     path("Comment/", views.Comment, name='comment'),
-
+    path("ContactUs/", views.Contact, name='ContactUs'),
 ]
