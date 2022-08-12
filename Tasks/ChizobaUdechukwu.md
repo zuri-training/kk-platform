@@ -8,7 +8,7 @@ Here are my contributions to the team:
    <a href="https://github.com/zuri-training/kk-website/issues/21#issue-1323450274">KK-website landing page (section-two)</a>
    
   Watch movies page:<br>
-   <a href="https://github.com/zuri-training/kk-platform/issues/23#issue-1333675273">KK-platform watch, download, save, like and share movies.</a>
+   <a href="https://github.com/zuri-training/kk-platform/pull/50#issue-1335982534">KK-platform watch, download, save, like and share movies.</a>
    
   Movie interactions:<br>
     <a href="#">kk-platform like, share, download and save frontend features</a>
