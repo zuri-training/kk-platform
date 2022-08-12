@@ -158,3 +158,12 @@ def Comment(request):
         messages.error(
             request, "Unsuccessful Commenting.")
     return render(request=request, template_name="comment.html", context={"comment_form": form})
+
+
+#CONTACT US FUNCTION
+
+def Contact(request):
+    return render(request=request, template_name="contact.html")
+
+
+
