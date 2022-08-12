@@ -8,7 +8,7 @@ Here are my contributions to the team:
    <a href="https://github.com/zuri-training/kk-website/issues/18#issue-1323449177">KK-website landing page (section-two)</a>
    
   Watch movies page:<br>
-   <a href="https://github.com/zuri-training/kk-platform/issues/23#issue-1333675273">Issues- KK-platform watch movies page.</a>
+   <a href="https://github.com/zuri-training/kk-platform/issues/23#issue-1333675273">Issues- KK-platform watch movies page.</a><br>
    <a href="https://github.com/zuri-training/kk-platform/pull/50#issue-1335982534">Branch- KK-platform watch movies page.</a>
    
   Movie interactions:<br>
