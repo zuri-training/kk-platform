@@ -10,5 +10,8 @@ Here are my contributions to the team:
   Watch movies page:<br>
    <a href="https://github.com/zuri-training/kk-platform/issues/23#issue-1333675273">KK-platform watch, download, save, like and share movies.</a>
    
+  Movie interactions:<br>
+    <a href="#">kk-platform like, share, download and save frontend features</a>
+   
  Contact Us page:<br>
    <a href="https://github.com/zuri-training/kk-website/issues/18#issue-1323449177">kk-website contact us page.</a>
