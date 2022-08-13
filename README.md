@@ -14,8 +14,8 @@ A marketing website for Kampus konnect: a platform for short movies created by c
 
 [Getting Started](#started)
 
-    - [Dependencies](#depend)
-    - [Installation](#install)
+    * [Dependencies](#depend)
+    * [Installation](#install)
 
 [License](#license)
 
