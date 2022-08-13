@@ -14,25 +14,26 @@ A marketing website for Kampus konnect: a platform for short movies created by c
 
 [Getting Started](#started)
 
-    * [Dependencies](#depend)
-    * [Installation](#install)
+* [Dependencies](#depend)
+* [Installation](#install)
 
 [License](#license)
 
 [Version History](#version)
 
 
-<a name="desc" />
+<a name="desc"></a>
+
 ## Description
 
 We are focused on providing a way for college students to share their creative ideas among their peers. They can start conversations around a thought or idea, create educational content, or simply fun creative content that serve as outlets for their creativity. This repository 
 
-<a name="demo" />
+<a name="demo"></a>
 ### Live Demo
 
 The site is presently hosted at [@Kampus Konnect](https://kampus-konnect.netlify.app)
 
-<a name="built" />
+<a name="built"></a>
 ### Built With
 
 The website is built with
@@ -44,7 +45,7 @@ The website is built with
 
 A snapshot of our DB schema can be seen [here](https://app.diagrams.net/#G1wtzgJG3QADuNnowGzx___eC6y_d1ihZA) 
 
-<a name="authors" />
+<a name="authors"></a>
 ### Authors
 
 Contributors names and contact info
@@ -64,12 +65,12 @@ Contributors names and contact info
 - [Uthman Damilola](https://github.com/orgs/zuri-training/people/D-uth)
 - [Chizoba Udechukwu](https://github.com/orgs/zuri-training/people/videlleudeh)
 
-<a name="started" />
+<a name="started"></a>
 ## Getting Started
 
 This is a python-django web-app.
 
-<a name="depend" />
+<a name="depend"></a>
 ### Dependencies
 
 Language - Python
@@ -77,7 +78,7 @@ Text editor - PyCharm, VSCode or other IDEs
 Version control - Git, GitHUB account
 Web browser - FireFox, Microsoft Edge, Google Chrome...
 
-<a name="install" />
+<a name="install"></a>
 ### Installation
 
 To install and successfully run this web app on your device, go to your terminal, i.e. cmd, powershell or gitbash. Then you;
@@ -158,12 +159,12 @@ The link below will appear in the terminal which will redirect you to the webpag
 (http://127.0.0.1:8000/)
 
 
-<a name="license" />
+<a name="license"></a>
 ## LICENSE. 
 
 This code is under MIT Licensing. Details of License [here](License).
 
-<a name="version" />
+<a name="version"></a>
 ## Version History
 
 * 0.1
