@@ -51,25 +51,25 @@ A snapshot of our DB schema can be seen [here](https://app.diagrams.net/#G1wtzgJ
 Contributors names and contact info
 
 #### Designers
-- [Olaosebikan Enitan](https://github.com/orgs/zuri-training/people/hennyitan)
-- [Faith Ime](https://github.com/orgs/zuri-training/people/Calejay)
-- [Oladele Taiwo](https://github.com/orgs/zuri-training/people/Jedstitches)
-- [Chidimma Madu](https://github.com/orgs/zuri-training/people/Mara-mma)
-- [Adeniji Adejoke Omolara](https://github.com/orgs/zuri-training/people/AdenijiOmolara)
-- [Obiahor Jesse](https://github.com/orgs/zuri-training/people/Jessesnr)
-- [Mary Eneh](https://github.com/orgs/zuri-training/people/Mary-Eneh)
-- [Concillia Nwaigwe](https://github.com/orgs/zuri-training/people/Lyia-n)
-- [Musa Morenikeji](https://github.com/orgs/zuri-training/people/M-Morenny-M-36)
--[Kikelomo Nicole Mariam Peter](https://github.com/orgs/zuri-training/people/kikenicole)
+- [Olaosebikan Enitan](https://github.com/hennyitan)
+- [Faith Ime](https://github.com/Calejay)
+- [Oladele Taiwo](https://github.com/Jedstitches)
+- [Chidimma Madu](https://github.com/Mara-mma)
+- [Adeniji Adejoke Omolara](https://github.com/AdenijiOmolara)
+- [Obiahor Jesse](https://github.com/Jessesnr)
+- [Mary Eneh](https://github.com/Mary-Eneh)
+- [Concillia Nwaigwe](https://github.com/Lyia-n)
+- [Musa Morenikeji](https://github.com/M-Morenny-M-36)
+-[Kikelomo Nicole Mariam Peter](https://github.com/kikenicole)
 
 ### Developers
-- [Ukanah Dean](https://github.com/orgs/zuri-training/people/Harrylever)
-- [Uthman Damilola](https://github.com/orgs/zuri-training/people/D-uth)
-- [Chizoba Udechukwu](https://github.com/orgs/zuri-training/people/videlleudeh)
-- [Isaac Franklin](https://github.com/orgs/zuri-training/people/Isaac-Franklin)
-- [Imotola Titilope Abisola Barakat](https://github.com/orgs/zuri-training/people/iwalewa_x)
-- [Ibrahim Mohammed](https://github.com/orgs/zuri-training/people/IbrahimMohammedAnyarsYorda)
-- [Adeboga Abigail](https://github.com/orgs/zuri-training/people/bogadei)
+- [Ukanah Dean](https://github.com/Harrylever)
+- [Uthman Damilola](https://github.com/D-uth)
+- [Chizoba Udechukwu](https://github.com/videlleudeh)
+- [Isaac Franklin](https://github.com/orgs/Isaac-Franklin)
+- [Imotola Titilope Abisola Barakat](https://github.com/iwalewa-x)
+- [Ibrahim Mohammed](https://github.com/IbrahimMohammedAnyarsYorda)
+- [Adeboga Abigail](https://github.com/bogadeji)
 
 
 <a name="started"></a>
