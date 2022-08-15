@@ -15,6 +15,7 @@ from decouple import config
 from django import conf
 import os
 import django_heroku
+import dj_database_url
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -30,8 +31,9 @@ SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config("DEBUG", cast=bool)
+DEBUG = FALSE
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 
 # Application definition
@@ -85,17 +87,7 @@ WSGI_APPLICATION = 'ProjectColFilms112.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'kampuskonnect',
-        'USER': 'postgres',
-        'PASSWORD': 'team112',
-        'HOST': 'localhost',
-        'PORT': '5432',
 
-    }
-}
 
 DATABASES = {
     'default': {
@@ -103,6 +95,21 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': '<database_name>',
+        'USER': '<username>',
+        'PASSWORD': '<password>',
+        'HOST': 'localhost',
+        'PORT': '',
+
+    }
+}
+
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
 
 
 # Password validation
@@ -162,6 +169,8 @@ EMAIL_FILE_PATH = BASE_DIR/'sent_emails'
 # Static files (CSS, JavaScript, Images)
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 STATIC_URL = '/static/'
+
+WHITENOISE_USE_FINDERS = True
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
