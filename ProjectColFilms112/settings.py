@@ -14,8 +14,12 @@ from pathlib import Path
 from decouple import config
 from django import conf
 import os
+import django_heroku
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -155,6 +159,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = BASE_DIR/'sent_emails'
 
-# # Static files (CSS, JavaScript, Images)
-# STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
-# STATIC_URL = '/static/'
+# Static files (CSS, JavaScript, Images)
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+STATIC_URL = '/static/'
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
