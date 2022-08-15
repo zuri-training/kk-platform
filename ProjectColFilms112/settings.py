@@ -155,6 +155,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = BASE_DIR/'sent_emails'
 
-# Static files (CSS, JavaScript, Images)
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
-STATIC_URL = '/static/'
+# # Static files (CSS, JavaScript, Images)
+# STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+# STATIC_URL = '/static/'
