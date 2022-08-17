@@ -21,8 +21,12 @@
   - [Backend And Database Setup Folder Folder](https://github.com/zuri-training/kk-platform)
     -This task included setting up the Django project for the backend configuration of our project and pushing the project to GitHub
 
-**Extras Will Go Below, Here Please Ignore**
+**Some videos I had sent to my team members in order to keep them up to date with my duty**
 
-##### Add any extra descriptions you might want to have here. Use the format below to add more links if you want
+##### Server Update video: 
 
-- [Link Description](Add link here)
+- [click here to watch video of server update](https://youtu.be/US-oWMi9hSU)
+
+##### Video uploading feature update: 
+
+- [click here to watch video of video upload process on Kampus Konnect](https://youtu.be/s7P--WYDHR8)
