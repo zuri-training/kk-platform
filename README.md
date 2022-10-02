@@ -68,7 +68,7 @@ Contributors names and contact info
 - [Chizoba Udechukwu](https://github.com/videlleudeh)
 - [Isaac Franklin](https://github.com/orgs/Isaac-Franklin)
 - [Imotola Titilope Abisola Barakat](https://github.com/iwalewa-x)
-- [Ibrahim Mohammed](https://github.com/IbrahimMohammedAnyarsYorda)
+- [Ibrahim Mohammed](https://github.com/Bandastic018)
 - [Adeboga Abigail](https://github.com/bogadeji)
 
 
